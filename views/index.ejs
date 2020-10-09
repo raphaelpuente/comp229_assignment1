@@ -1,15 +1,49 @@
 <%- include partials/header.ejs %>
-
 <%- include partials/main_nav.ejs %>
 
 
- 
 
-  <!-- Main Content -->
 
-  <main>
-    <!-- <img src="./Assets/index_raphael.jpg" class="img-fluid" alt="Responsive image"> -->
 
+<!-- Home Page --> 
+<section> 
+  <% if (title == "Home") { %>
+    <main>
+    <div class="container"></div>
+      <div class="jumbotron">      
+        <h1 class="display-4">Hello! I'm Raphael</h1>
+        <p>Thank you for stopping by to my personal webpage!</p>
+      </div>
+    </div>
+  </main>
+  <% } else { %>
+  <% } %>
+</section>
+
+<!-- About Page --> 
+<section> 
+  <% if (title == "About") { %>
+    <main>
+    <img src="./Assets/images/index_raphael.jpg" class="img-fluid" alt="Responsive image">
+    <div class="container"></div>
+      <div class="jumbotron">      
+        <h1 class="display-4">Hello! I'm Raphael</h1><br>
+        <p>I was born and raised in an industrial city called Monterrey, in the northern part of Mexico. I have a bachelor's degree in Marketing and Advertisement from TecMilenio University. I graduated in 2014 and I had 6 years of experience working as a buyer for FEMSA, one of the biggest companies in Mexico that owns OXXO, a chain of convenience stores with more than 18,000 locations accross Mexico, Colombia, Chile, Peru and the United States.</p>
+        <p>Then, I decided to change the course of my professional carreer and since January 2020, I arrived to Canada and now I'm sturying Software Engineering Technician at Centennial College. My goal is to work for a big company and to become a front-end developer</p><br>
+      </div>
+    </div>
+  </main>
+  <% } else { %>
+  <% } %>
+</section>
+
+
+
+<!-- Services Page --> 
+<section> 
+  <% if (title == "Services") { %>
+    <main>
+    <img src="./Assets/images/index_raphael.jpg" class="img-fluid" alt="Responsive image">
     <div class="container"></div>
       <div class="jumbotron">      
         <h1 class="display-4">Hello! I'm Raphael</h1>
@@ -17,10 +51,25 @@
       </div>
     </div>
   </main>
+  <% } else { %>
+  <% } %>
+</section>
 
-  
-
+<!-- Contact Us Page --> 
+<section> 
+  <% if (title == "Contact Us") { %>
+    <main>
+    <img src="./Assets/images/index_raphael.jpg" class="img-fluid" alt="Responsive image">
+    <div class="container"></div>
+      <div class="jumbotron">      
+        <h1 class="display-4">Hello! I'm Raphael</h1>
+        <h1>Welcome to <%= title %></h1>
+      </div>
+    </div>
+  </main>
+  <% } else { %>
+  <% } %>
+</section>
 
   <%- include partials/bottom_nav.ejs %>
-
   <%- include partials/footer.ejs %>
