@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-  </head>
-  <body>
-    <h1><%= mainHeading %></h1>
-    <p>Hello, World!</p>
+<html lang="en">
+<head>
 
-    <script src="/Scripts/app.js"></script>
-  </body>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel='stylesheet' href='/Content/app.css'/>
+
+</head>
+<body>
+
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="/home">
+      <img src="./Assets/images/logo.png" width="25" height="30" alt="logo" loading="lazy"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/home"><i class="fas fa-home"></i> Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><i class="fas fa-heart"></i></i> About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/projects"><i class="fas fa-briefcase"></i> Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/services"><i class="fas fa-bullseye"></i> Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact"><i class="fas fa-envelope"></i> Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Welcome to <%= title %></h1>
+
+  <!-- JavaScript Section -->
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Scripts/app.js"></script>
+</body>
 </html>
+
