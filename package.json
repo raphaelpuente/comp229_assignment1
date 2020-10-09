@@ -1,14 +1,15 @@
 {
   "name": "assignment1",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
   "engines": {
-    "node": "^14.00.0",
-    "npm": ""
+    "node": "^10.00.0",
+    "npm": "^6.0.0"
   },
+
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.2",
@@ -20,18 +21,5 @@
     "jquery": "^3.5.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  },
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raphaelpuente/comp229_assignment1.git"
-  },
-  "author": "Raphael Puente",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raphaelpuente/comp229_assignment1/issues"
-  },
-  "homepage": "https://github.com/raphaelpuente/comp229_assignment1#readme",
-  "description": ""
+  }
 }
